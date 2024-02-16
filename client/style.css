@@ -1,0 +1,699 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #DFF3FD;
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: #2D7DB8;
+    position: fixed;
+    height: 13vh;
+    z-index: 100;
+}
+
+.companyName {
+    margin-left: 2vw;
+    font-size: 2.6vw;
+}
+
+.navBar {
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.navlink {
+    font-size: 2vw;
+}
+
+.link {
+    color: #2D7DB8;
+    text-decoration: none;
+}
+
+.navlink_kontakt {
+    font-size: 2vw;
+    background-color: #2D7DB8;
+    color: white;
+    padding: .9rem;
+    border-radius: 1rem;
+}
+
+.kilLink {
+    text-decoration: none;
+}
+
+.landingHolder {
+    padding-top: 13vh;
+    height: 90vh;
+    justify-content: space-between;
+    color: #2D7DB8;
+
+}
+.hiddenLanding{
+    display: none;    
+}
+.landingTekstHolder {
+    width: 40%;
+    height: 80%;
+    margin-left: 4rem;
+
+}
+
+.landingTitle {
+    font-size: 3vw;
+    font-weight: 1000;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.landingTekst {
+    font-size: 2vw;
+    font-weight: 100;
+    margin-bottom: 5vw;
+}
+
+.landingBtn {
+    width: 30vw;
+    font-size: 1.8rem;
+    background-color: #2D7DB8;
+    color: white;
+    padding: .8rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.landingImage {
+    width: 40vw;
+    background-color: red;
+    margin-right: 2rem;
+}
+
+.kontaktHolder {
+    align-items: start;
+
+}
+
+.kontaktInfoHolder {
+    flex-direction: column;
+    width: 50%;
+    margin-top: 10vh;
+}
+
+.kontaktTitle {
+    font-size: 3vw;
+    color: #2D7DB8;
+}
+
+.emailInputs {
+    background-color: #2D7DB8;
+    color: white;
+    border: none;
+    width: 25vw;
+    height: 4vw;
+    margin: 1vw;
+    border-radius: 1vw;
+    padding-left: 1vw;
+}
+
+.emailInputs::placeholder {
+    color: white;
+}
+
+.emailInputs::after,
+.emailInputs::before {
+    border: none;
+}
+
+#EmailText {
+    background-color: #2D7DB8;
+    width: 25vw;
+    color: white;
+    border: none;
+    padding: 1vw 0vw 0vw 1vw;
+    border-radius: 1vw;
+}
+
+#EmailText::placeholder {
+    color: white;
+}
+
+#EmailSend {
+    background-color: #2D7DB8;
+    color: white;
+    width: 25vw;
+    font-size: 2vw;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 1vw;
+    padding: 1vw;
+    text-align: start;
+    margin-bottom: 5vh;
+}
+
+.kontaktImageHolder {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    background: radial-gradient(ellipse at right bottom, #fff 0%, #fff 70%, #DFF3FD 71%);
+    min-height: 110vh;
+    align-items: center;
+}
+
+#kontaktImage {
+    width: 30vw;
+    height: 30vw;
+    margin-right: 2vw;
+}
+
+.indexIntro {
+    margin: 0vw;
+    justify-content: space-around;
+    background: radial-gradient(ellipse 100% 50%, #fff 0%, #fff 90%, #DFF3FD 90.1%);
+    padding: 15vw 0vw 20vw 0vw;
+    flex-direction: column;
+    border-bottom: black 1px solid;
+}
+
+.extraHolder {
+    flex-direction: row;
+}
+
+.aboutIntroText {
+    flex-direction: column;
+    color: #2D7DB8;
+    width: 40%;
+    align-items: center;
+}
+
+.IUTitle {
+    font-size: 3.5vw;
+    width: 100%;
+}
+
+.introText {
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.introSupport {
+    font-size: 2.5vw;
+}
+
+.aboutLink {
+    background-color: #2D7DB8;
+    text-decoration: none;
+    color: white;
+    width: 30vw;
+    height: 5vw;
+    border-radius: 1vw;
+    font-size: 2.3vw;
+    font-weight: 700;
+}
+
+.wideSplit {
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+    margin-bottom: 5vw;
+}
+
+#IntroImage {
+    width: 40vw;
+    background-color: #2D7DB8;
+    margin: 1rem;
+}
+
+.BuisnessHolder {
+    background-color: white;
+}
+
+.BuisnessIntro {
+    flex-direction: row;
+    color: #2D7DB8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10vw 5vw 10vw 5vw;
+    justify-content: space-around;
+    background-color: #DFF3FD;
+}
+
+.BuisnessTitle {
+    font-size: 3.5vw;
+}
+
+.BuisnessDesc {
+    font-size: 2.8vw;
+    width: 80%;
+    font-weight: lighter;
+}
+
+#BuisnessImage {
+    width: 40vw;
+}
+
+.swiper {
+
+    height: 60vh;
+    margin-left: 5vw;
+    border-bottom: solid black 1px;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #2D7DB8;
+    color: white;
+    height: 50vw;
+    width: 10vw;
+    border-radius: 2vw;
+    margin-left: 5vw;
+    border: solid black 1px;
+    border-radius: 2vw;
+}
+
+.styleClass {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0vw;
+}
+
+.swiper-pagination {
+    margin-bottom: 5vh;
+}
+
+#work {
+    padding-bottom: 10vw;
+    background-color: #DFF3FD;
+}
+
+.CompanyTitle {
+    font-size: 3vw;
+    width: 80%;
+}
+
+.CompanyDesc {
+    font-size: 2vw;
+    width: 80%;
+}
+
+#stSlide {
+    background: url(bilder/KoppoDev.png);
+    background-size: cover;
+    border-radius: 2vw;
+    color: black;
+}
+
+.kredit {
+    display: none;
+}
+
+.PaymentHeader {
+    justify-content: space-around;
+    color: #2D7DB8;
+    align-items: start;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    background: #DFF3FD;
+    border-radius: 0% 0% 50% 50%;
+}
+
+.PaymentHeaderTitle {
+    font-size: 3vw;
+}
+
+.PaymentHeaderText {
+    font-size: 2vw;
+}
+
+.PaymentSwitchHolder {
+    border: solid #2D7DB8 1px;
+    padding: 0%;
+    border-radius: 1vw;
+    margin-top: 2vw;
+    cursor: pointer;
+}
+
+.monthlySwitch {
+    padding: 1vw;
+    font-size: 2vw;
+    margin: 0%;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    background-color: #2D7DB8;
+    color: #DFF3FD;
+}
+
+.yearlySwitch {
+    padding: 1vw;
+    font-size: 2vw;
+    background-color: #DFF3FD;
+    color: #2D7DB8;
+    margin: 0%;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.PackagesHolder {
+    background-color: white;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.package {
+    width: 25vw;
+    border: solid black 1px;
+    border-radius: 2vw;
+    flex-direction: column;
+}
+
+#starter {
+    height: 85vh;
+}
+
+#advanced {
+    height: 95vh;
+}
+
+.packageTitle {
+    width: 80%;
+    font-size: 2.5vw;
+    margin: 0%;
+}
+
+.packageText {
+    font-size: 1.5vw;
+    color: black;
+    opacity: .4;
+    width: 65%;
+    padding-right: 15%;
+    margin-bottom: 1rem;
+}
+
+.packageDiamond {
+    width: 80%;
+    margin-bottom: 0%;
+}
+
+.packagePricingDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 7vh;
+    margin-top: 1vw;
+}
+
+.kr {
+    color: black;
+    opacity: .4;
+    font-size: 1.3vw;
+    height: 100%;
+    margin: 0%;
+}
+
+.priceMonth {
+    color: black;
+    opacity: .4;
+    font-size: 1.5vw;
+    margin: 0vw;
+    height: auto;
+    display: flex;
+    align-items: end;
+}
+
+.price {
+    text-align: center;
+    height: auto;
+    margin: 0%;
+    font-size: 3.5vw;
+}
+
+.packageSplit {
+    width: 90%;
+    margin: 5%;
+    margin-top: 3vw;
+}
+
+.perksHolder {
+    width: 70%;
+}
+
+.perk {
+    font-size: 1vw;
+    width: 80%;
+}
+
+.packageBtn {
+    font-size: 2vw;
+    background-color: #2D7DB8;
+    width: 80%;
+    text-align: center;
+    border-radius: 2vw;
+    color: white;
+    padding: 1vw;
+    font-weight: 0;
+    margin-top: 2vw;
+}
+
+#aboutHeader {
+    background: #fff;
+}
+
+.aboutWelcome {
+    padding-top: 17vh;
+    background-color: #DFF3FD;
+    flex-direction: column;
+    color: #2D7DB8;
+
+}
+
+.aboutTitle {
+    font-size: 3vw;
+}
+
+.aboutText {
+    font-size: 1.5vw;
+    width: 70%;
+    opacity: .7;
+}
+
+.aboutBtnsHolder {
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 3vw;
+}
+
+.aboutBtns {
+    background-color: #fff;
+    padding: 1vw 2vw 1vw 2vw;
+    border-radius: 1vw;
+    border: solid gray 1px;
+    color: #2D7DB8;
+    text-decoration: none;
+}
+
+.mainInfoHolder {
+    color: #2D7DB8;
+    background-color: #fff;
+    margin-top: 5vw;
+    padding: 5vw;
+    padding-left: 0%;
+    border-top: solid gray 1px;
+    border-bottom: solid gray 1px;
+}
+
+.mainTextHolder {
+    flex-direction: column;
+}
+
+.mainTitle {
+    font-size: 3vw;
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainText {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+    width: 80%;
+    font-weight: 100;
+}
+
+.mainImage {
+    width: 40%;
+    border-radius: 2vw;
+}
+
+.servicesHolder {
+    flex-direction: column;
+    color: #2D7DB8;
+    margin-bottom: 10vh;
+
+}
+
+.serviceDiv {
+    width: 100%;
+    align-items: start;
+}
+
+.service {
+    margin-top: 10vw;
+    flex-direction: column;
+    width: 30%;
+
+}
+
+.serviceName {
+    font-size: 3vw;
+    margin: 0%;
+}
+
+.serviceText {
+    margin-top: 2vw;
+    font-size: 1.5vw;
+}
+
+.serviceImageDiv {
+    padding: 1vw;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 6vw;
+    height: 6vw;
+}
+
+.serviceImg {
+    width: 100%;
+}
+
+#centerService {
+    margin-top: 2vw;
+}
+
+.aboutContactHolder {
+    flex-direction: column;
+    color: #2D7DB8;
+    background-color: #fff;
+    padding: 5vw;
+    border-top: solid gray 1px;
+}
+
+.aboutContactTitle {
+    font-size: 3vw;
+    margin-bottom: 0%;
+}
+
+.aboutContactText {
+    font-size: 2vw;
+    color: #2D7DB8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    width: 50%;
+    text-align: center;
+}
+
+.aboutContact {
+    flex-direction: row;
+    width: 50%;
+    flex-wrap: wrap;
+
+}
+
+.aboutContactInput {
+    border: solid gray 1px;
+    background-color: white;
+    border-radius: 0%;
+    width: 28%;
+    padding: 1%;
+    margin: 1%;
+    font-size: 1vw;
+}
+
+#aboutContactMessage {
+    width: 99%;
+
+}
+
+.aboutBtnDiv {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.aboutContactBtn {
+    width: 20%;
+    background-color: #fff;
+    border: solid gray 1px;
+    border-radius: 2vw;
+    margin: 1vw;
+    color: #2D7DB8;
+}
+
+.footer {
+    height: 50vh;
+    color: #2D7DB8;
+    justify-content: space-around;
+}
+
+.kopoInfo {
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+}
+
+.kopoInfoTitle {
+    font-size: 3vw;
+    margin: 0%;
+    margin-top: 5vw;
+}
+
+.kopoInfoText {
+    font-size: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    width: 80%;
+}
+
+.kopoOther {
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.kopoTitle {
+    font-size: 2.5vw;
+    margin: 0%;
+    margin-top: 5vw;
+        
+}
+
+.kopoTekst {
+    font-size: 1.7vw;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #2D7DB8;
+}
+
