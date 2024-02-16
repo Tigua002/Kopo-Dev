@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kopo Dev</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
@@ -28,7 +28,16 @@
             <a href="../kontakt" class="link">
                 <h1 class="navlink_kontakt">KONTAKT</h1>
             </a>
+            <h1 id="openNav">&#9776; </h1>
+
         </div>
+    </div>
+    <div class="hiddenNav flex">
+        <h1 id="closeNav">&#x2715;</h1>
+        <a href="../omOss/" class="hiddenLink">OM OSS</a>
+        <a href="/#pakker" class="hiddenLink">PAKKER</a>
+        <a href="/#portfolio" class="hiddenLink">ARBEID</a>
+        <a href="../kontakt/" class="hiddenLink">KONTAKT</a>
     </div>
     <div class="landingHolder flex">
         <div class="landingTekstHolder ">
@@ -47,6 +56,7 @@
     <div class="indexIntro flex">
         <hr class="wideSplit" id="IntoAbout">
         <div class="extraHolder flex">
+            <h1 class="hiddenIntro">OM OSS</h1>
             <img src="../bilder/IntroImage.jpg" alt="lite bilde" id="IntroImage">
             <div class="aboutIntroText flex">
                 <h1 class="IUTitle">OM OSS</h1>
@@ -132,7 +142,7 @@
                 </div>
                 <div class="PaymentSwitchHolder flex">
                     <h1 class="monthlySwitch">Månedlig</h1>
-                    <h1 class="yearlySwitch">årlig</h1>
+                    <h1 class="yearlySwitch">Årlig</h1>
                 </div>
             </div>
             <div class="PackagesHolder">
@@ -204,26 +214,47 @@
         </div>
         <div class="kopoOther">
             <h1 class="kopoTitle">Produkt</h1>
-            <a href="/#portfolio" class="kopoTekst"><h1 class="kopoTekst">Portfolio</h1></a>
-            <a href="/#pakker" class="kopoTekst"><h1 class="kopoTekst">Pricing</h1></a>
+            <a href="/#portfolio" class="kopoTekst">
+                <h1 class="kopoTekst">Portfolio</h1>
+            </a>
+            <a href="/#pakker" class="kopoTekst">
+                <h1 class="kopoTekst">Pricing</h1>
+            </a>
         </div>
         <div class="kopoOther">
             <h1 class="kopoTitle">Selvskap</h1>
-            <a href="../omOss/#omOss" class="kopoTekst"><h1 class="kopoTekst">Om Oss</h1></a>
-            <a href="../kontakt/" class="kopoTekst"><h1 class="kopoTekst">Kontakt</h1></a>
+            <a href="../omOss/#omOss" class="kopoTekst">
+                <h1 class="kopoTekst">Om Oss</h1>
+            </a>
+            <a href="../kontakt/" class="kopoTekst">
+                <h1 class="kopoTekst">Kontakt</h1>
+            </a>
         </div>
-  
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 80,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+        var x = window.matchMedia("(max-width: 600px)")
+        if (x.matches) {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 100,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        } else {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 80,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+        }
     </script>
     <script src="../index/script.js"></script>
 

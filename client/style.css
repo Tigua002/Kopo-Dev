@@ -64,7 +64,7 @@ html {
     color: #2D7DB8;
 
 }
-.hiddenLanding{
+.hiddenLanding, .hiddenIntro{
     display: none;    
 }
 .landingTekstHolder {
@@ -696,4 +696,241 @@ html {
     text-decoration: none;
     color: #2D7DB8;
 }
-
+#openNav{
+    display: none;
+}
+.hiddenNav{
+    width: 0%;
+}
+@media screen and (max-width: 600px) {
+    .header{
+        height: 7vh;
+    }
+    .landingTitle{
+        display: none;
+    }
+    .hiddenLanding{
+        display: block;
+        font-size: 4vw;
+        color: #2D7DB8;
+    }
+    .landingImage{
+        width: 80%;
+        margin: 10%;
+        margin-bottom: 0%;
+    }
+    .landingTekstHolder{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        margin: 0%;
+    }
+    .landingHolder{
+        flex-direction: column-reverse;
+        padding-top: 10vh;
+        height: auto;
+    }
+    .landingTekst{
+        font-size: 4vw;
+        width: 100%;
+        text-align: center;
+    }
+    .landingBtn{
+        width: 100%;
+        font-size: 3vw;
+        padding: 2vw;
+    }
+    .hiddenIntro{
+        font-size: 5vw;
+        width: 100%;
+        display: block;
+        color: #2D7DB8;
+        text-align: center;
+    }
+    .IUTitle{
+        display: none;
+    }
+    .extraHolder{
+        flex-direction: column;
+    }
+    #IntroImage{
+        width: 80%;
+    }
+    .aboutIntroText{
+        width: 100%;
+    }
+    .introText{
+        font-size: 3vw;
+        width: 70%;
+    }
+    .introSupport{
+        margin-top: 3vh;
+        font-size: 3vw;
+    }
+    .aboutLink{
+        font-size: 3vw;
+        padding: 1vw;
+    }
+    
+    .swiper{
+        margin: 0vw;
+        width: 100%;
+    }
+    .swiper-slide{
+        margin: 0%;
+        width: 100%;
+    }
+    .styleClass{
+        width: 100%;
+        height: 100%;
+    }
+    .CompanyTitle{
+        font-size: 10vw;
+    }
+    .CompanyDesc{
+        font-size: 7vw;
+    }
+    #BuisnessImage{
+        display: none;
+    }
+    .BuisnessTitle{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .BuisnessDesc{
+        font-size: 4vw;
+        width: 100%;
+        text-align: center;
+    }
+    .PaymentHeader{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: auto;
+    }
+    .PaymentHeaderTitle{
+        font-size: 4vw;
+    }
+    .PaymentHeaderText{
+        font-size: 3vw;
+    }
+    .PaymentSwitchHolder{
+        margin-top: 5vw;
+    }
+    .monthlySwitch{
+        font-size: 6vw;
+        padding: 2vw;
+    }
+    .yearlySwitch{
+        font-size: 6vw;
+        padding: 2vw;
+    }
+    .PackagesHolder{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0%;
+    }
+    .package{
+        height: auto;
+        width: 80%;
+        margin-bottom: 5vh ;
+    }
+    #starter{
+        height: 50vh;
+        
+    }
+    .packageTitle{
+        font-size: 6vw;
+    }
+    .packageText{
+        font-size: 4vw;
+    }
+    .packageDiamond{
+        font-size: 10vw;
+    }
+    .price{
+        font-size: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4vw;
+    }
+    .kr{
+        padding-top: 3vw;
+        font-size: 4vw;
+    }
+    .priceMonth{
+        font-size: 4vw;
+    }
+    .perk{
+        font-size: 3.5vw;
+    }
+    .packageBtn{
+        font-size: 4vw;
+        margin-top: 5vw;
+    }
+    #advanced{
+        height: 70%;
+    }
+    .kontaktImageHolder{
+        display: none;
+    }
+    .kontaktTitle{
+        font-size: 6vw;
+    }
+    .emailInputs{
+        width: 80%;
+        font-size: 4vw;
+        padding: 3vw;
+    }
+    #EmailText{
+        width: 80%;
+        padding: 3vw;
+        font-size: 4vw;
+    }
+    #EmailSend{
+        margin-top: 5vh;
+        width: 80%;
+        padding: 3vw;
+        font-size: 4vw;
+    }
+    .link{
+        display: none;
+    }
+    .navBar{
+        justify-content: end;
+    }
+    .companyName{
+        font-size: 6vw;
+    }
+    #openNav{
+        display: block;
+        margin-right: 4vw;
+    }
+    .hiddenNav{
+        width: 0%;
+        position: fixed;
+        background-color: #fff;
+        z-index: 200;
+        height: 100%;
+        left: 0%;
+        transition: .5s ease-in;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .hiddenLink{
+        color: #2D7DB8;
+        text-decoration: none;
+        margin: 5vw;
+        font-size: 6vw;
+    }
+    #closeNav{
+        color: #2D7DB8;
+    }
+}

@@ -28,3 +28,15 @@ console.log("hello");
 
 year.addEventListener("click", changeToYear)
 month.addEventListener("click", changeToMonth)
+
+function openNav() {
+    document.getElementsByClassName("hiddenNav")[0].style.width = "100%"
+}
+function closeNav(params) {
+    document.getElementsByClassName("hiddenNav")[0].style.width = "0%"
+}
+
+document.getElementById("openNav").addEventListener("click", openNav)
+document.getElementById("closeNav").addEventListener("click", closeNav)
+document.getElementsByClassName("hiddenLink")[1].addEventListener("click", closeNav)
+document.getElementsByClassName("hiddenLink")[2].addEventListener("click", closeNav)

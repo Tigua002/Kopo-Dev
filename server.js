@@ -2,21 +2,10 @@
 const express = require('express')
 const app = express();
 const bodyParser = require('body-parser');
-const md5 = require('md5')
-// definerer porten jeg skal bruke
+
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server is running on this port: ${PORT}`));
-const mysql = require('mysql');
-// test databasen
-const connection = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'server',
-  password: 'serverpass',
-  database: 'koppodev'
-});
 
-// connecter til databasen
-connection.connect();
 
 var nodemailer = require('nodemailer');
 
