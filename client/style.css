@@ -937,4 +937,34 @@ html {
     #closeNav{
         color: #2D7DB8;
     }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .kopoInfo{
+        width: 100%;
+        margin: 0%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3vw;
+    }
+    .kopoInfoTitle{
+        font-size: 5vw;
+    }
+    .kopoInfoText{
+        width: auto;
+        font-size: 3.5vw;
+    }
+    .kopoOther{
+        margin-top: 10vw;
+        height: auto;
+        margin-bottom: 10vw;
+    }
+    .kopoTitle{
+        font-size: 4vw;
+    }
+    .kopoTekst{
+        font-size: 3vw;
+    }
 }
