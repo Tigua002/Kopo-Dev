@@ -21,6 +21,7 @@ html {
     justify-content: space-between;
     width: 100%;
     color: #2D7DB8;
+    background-color: #DFF3FD;
     position: fixed;
     height: 13vh;
     z-index: 100;
@@ -745,7 +746,7 @@ html {
         padding: 2vw;
     }
     .hiddenIntro{
-        font-size: 5vw;
+        font-size: 6vw;
         width: 100%;
         display: block;
         color: #2D7DB8;
@@ -764,8 +765,8 @@ html {
         width: 100%;
     }
     .introText{
-        font-size: 3vw;
-        width: 70%;
+        font-size: 4vw;
+        width: 80%;
     }
     .introSupport{
         margin-top: 3vh;
