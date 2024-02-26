@@ -24,7 +24,6 @@ function changeToMonth() {
     year.style.backgroundColor = "#DFF3FD"
     year.style.color = "#2D7DB8"
 }
-
 year.addEventListener("click", changeToYear)
 month.addEventListener("click", changeToMonth)
 
