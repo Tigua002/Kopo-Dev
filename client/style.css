@@ -570,6 +570,7 @@ html {
 .serviceText {
     margin-top: 2vw;
     font-size: 1.5vw;
+    text-align: center;
 }
 
 .serviceImageDiv {
@@ -621,12 +622,16 @@ html {
     border: solid gray 1px;
     background-color: white;
     border-radius: 0%;
-    width: 28%;
+    width: 30%;
     padding: 1%;
-    margin: 1%;
     font-size: 1vw;
 }
-
+.aboutInputDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
 #aboutContactMessage {
     width: 99%;
 
@@ -662,13 +667,13 @@ html {
 }
 
 .kopoInfoTitle {
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin: 0%;
     margin-top: 5vw;
 }
 
 .kopoInfoText {
-    font-size: 2vw;
+    font-size: 1.7vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     width: 80%;
@@ -682,14 +687,14 @@ html {
 }
 
 .kopoTitle {
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin: 0%;
     margin-top: 5vw;
         
 }
 
 .kopoTekst {
-    font-size: 1.7vw;
+    font-size: 1.4vw;
     width: 100%;
     text-align: center;
     font-weight: 500;
@@ -967,5 +972,69 @@ html {
     }
     .kopoTekst{
         font-size: 3vw;
+    }
+    .aboutWelcome{
+        justify-content: flex-start;
+        align-items: start;
+        padding-left: 5vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    .aboutTitle{
+        font-size: 6vw;
+        width: 90%;
+    }
+    .aboutText{
+        font-size: 4vw;
+    }
+    .aboutBtnsHolder{
+        width: 95%;
+        justify-content: space-around;
+        padding-right: 5vw;
+        font-weight: 100;
+    }
+    .aboutBtns{
+        font-size: 5vw;
+        padding: 2vw;
+    }
+    .mainInfoHolder{
+        flex-direction: column-reverse;
+    }
+    .mainTitle{
+        display: none;
+    }
+    .mainText{
+        font-size: 4vw;
+    }
+    .mainImage{
+        width: 80%;
+        margin: 2vw 0vw 2vw 0vw;
+    }
+    .serviceDiv{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;    
+    }
+    .serviceName{
+        font-size: 6vw;
+        margin: 2vw;
+    }
+    .serviceText{
+        font-size: 4vw;
+        width: 80%;
+    }
+    .service{
+        width: 80%;
+        margin-top: 3vw;
+    }
+    .serviceImageDiv{
+        width: 20%;
+        height: 20%;
+        padding: 3%;
+        border: solid gray 1px;
+    }
+    .serviceImg{
+        width: 80%;
     }
 }
