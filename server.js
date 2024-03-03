@@ -77,32 +77,4 @@ app.post("/send/mail", function (req, res) {
   res.send(sendMail(transporter, mailOptions))
 })
 
-// // post "/create/user/"
-// app.post("/create/user/", function (req, res) {
-//     // skaffer user og passord fra data-en og gir dem en verdi
-//     let user = req.body.user
-//     let passord = req.body.passord
-//     let hiddenPass = md5(passord)
-//     // legger til brukeren i users "table"
-//     connection.query(`INSERT INTO clients (username, password) VALUES ("${user}", "${hiddenPass}")`)
-
-
-//     connection.query(`CREATE TABLE ${user}Connections (initiator VARCHAR(100), accepter VARCHAR(100), initiatorID INT, accepterID INT)`)
-
-
-
-// })
-
-
-// app.post("/change/user/", function (req, res) {
-//     // skaffer user og passord fra data-en og gir dem en verdi
-//     let oldUser = req.body.oldUser
-//     let newUser = req.body.newUsername
-//     let password = req.body.pass
-//     let hiddenPass = md5(password)
-//     // legger til brukeren i users "table"
-//     connection.query(`UPDATE clients set username = "${newUser}" WHERE username = "${oldUser}" AND password = "${hiddenPass}"`)
-//     connection.query(`ALTER TABLE ${oldUser}connections RENAME TO ${newUser}connections`)
-// })
-
 app.use(express.static("client"))
