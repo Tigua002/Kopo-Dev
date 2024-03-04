@@ -932,27 +932,25 @@ html {
         margin-right: 4vw;
     }
     .hiddenNav{
-        width: 84vw;
+        width: 100%;
         position: fixed;
         background-color: #2D7DB8;
         color: #fff;
         z-index: 200;
         height: auto;
-        left: 5%;
-        bottom: 5%;
+        bottom: 0%;
         transition: .5s ease-in;
         flex-direction: column;
         overflow: visible;
         justify-content: space-around;
-        border-radius: 8vw;
-        padding: 3vw;
+        padding: 2vw 0vw 2vw 0vw;
     }
     .hiddenNavBar, .hiddenNavDesc{
         width: 100%;
         justify-content: space-around;
     }
     .hiddenNavDesc{
-        padding-left: 3vw;
+        padding-left: 0vw;
         margin-top: 2vw;
     }
     .hiddenlinkDesc{
@@ -969,7 +967,7 @@ html {
         background-color: #fff;
         border-radius: 50px;
         padding: 2vw;
-        width: 80%;
+        width: 60%;
         margin: 0%;
     }
     #closeNav{
@@ -977,6 +975,7 @@ html {
     }
     .footer{
         flex-wrap: wrap;
+        padding-bottom: 10vw;
     }
     .kopoInfo{
         width: 100%;
