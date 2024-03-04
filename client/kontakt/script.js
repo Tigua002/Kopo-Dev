@@ -29,12 +29,3 @@ async function sendMail() {
 
 }
 
-function openNav() {
-    document.getElementsByClassName("hiddenNav")[0].style.width = "100%"
-}
-function closeNav(params) {
-    document.getElementsByClassName("hiddenNav")[0].style.width = "0%"
-}
-
-document.getElementById("openNav").addEventListener("click", openNav)
-document.getElementById("closeNav").addEventListener("click", closeNav)
