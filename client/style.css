@@ -100,7 +100,6 @@ html {
 
 .landingImage {
     width: 40vw;
-    background-color: red;
     margin-right: 2rem;
 }
 
@@ -712,6 +711,7 @@ html {
 @media screen and (max-width: 600px) {
     .header{
         height: 7vh;
+        position: static;
     }
     .landingTitle{
         display: none;
@@ -888,8 +888,16 @@ html {
     #advanced{
         height: 70%;
     }
+    .kontaktHolder{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .kontaktImageHolder{
         display: none;
+    }
+    .kontaktInfoHolder{
+        margin-top: 0%;
     }
     .kontaktTitle{
         font-size: 6vw;
@@ -924,21 +932,45 @@ html {
         margin-right: 4vw;
     }
     .hiddenNav{
-        width: 0%;
+        width: 84vw;
         position: fixed;
-        background-color: #fff;
+        background-color: #2D7DB8;
+        color: #fff;
         z-index: 200;
-        height: 100%;
-        left: 0%;
+        height: auto;
+        left: 5%;
+        bottom: 5%;
         transition: .5s ease-in;
         flex-direction: column;
-        overflow: hidden;
+        overflow: visible;
+        justify-content: space-around;
+        border-radius: 8vw;
+        padding: 3vw;
     }
-    .hiddenLink{
-        color: #2D7DB8;
+    .hiddenNavBar, .hiddenNavDesc{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .hiddenNavDesc{
+        padding-left: 3vw;
+        margin-top: 2vw;
+    }
+    .hiddenlinkDesc{
+        color: white;
+        font-size: 4vw;
         text-decoration: none;
-        margin: 5vw;
-        font-size: 6vw;
+    }
+    .hiddenlink{
+        margin: 0%;
+        padding: 0%;
+        width: 15%;
+    }
+    .hiddenImage{
+        background-color: #fff;
+        border-radius: 50px;
+        padding: 2vw;
+        width: 80%;
+        margin: 0%;
     }
     #closeNav{
         color: #2D7DB8;
