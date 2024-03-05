@@ -633,7 +633,8 @@ html {
 }
 #aboutContactMessage {
     width: 99%;
-
+    height: 40vh;
+    font-size: 1vw;
 }
 
 .aboutBtnDiv {
@@ -718,7 +719,8 @@ html {
     }
     .hiddenLanding{
         display: block;
-        font-size: 4vw;
+        font-size: 7.5vw;
+        width: 80%;
         color: #2D7DB8;
     }
     .landingImage{
@@ -737,21 +739,21 @@ html {
     }
     .landingHolder{
         flex-direction: column-reverse;
-        padding-top: 10vh;
+        padding-top: 5vh ;
         height: auto;
     }
     .landingTekst{
-        font-size: 4vw;
-        width: 100%;
-        text-align: center;
+        font-size: 5vw;
+        width: 80%;
+        text-align: left;
     }
     .landingBtn{
         width: 100%;
-        font-size: 3vw;
-        padding: 2vw;
+        font-size: 5vw;
+        padding: 3vw;
     }
     .hiddenIntro{
-        font-size: 6vw;
+        font-size: 8vw;
         width: 100%;
         display: block;
         color: #2D7DB8;
@@ -770,16 +772,16 @@ html {
         width: 100%;
     }
     .introText{
-        font-size: 4vw;
-        width: 80%;
+        font-size: 5vw;
+        width: 90%;
     }
     .introSupport{
         margin-top: 3vh;
-        font-size: 3vw;
+        font-size: 5vw;
     }
     .aboutLink{
-        font-size: 3vw;
-        padding: 1vw;
+        font-size: 5vw;
+        padding: 2vw;
     }
     .styleClass{
         height: 80%;
@@ -884,6 +886,9 @@ html {
     .packageBtn{
         font-size: 4vw;
         margin-top: 5vw;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 5vw;
     }
     #advanced{
         height: 70%;
@@ -975,7 +980,8 @@ html {
     }
     .footer{
         flex-wrap: wrap;
-        padding-bottom: 10vw;
+        padding-bottom: 10vh;
+        height: 30vh;
     }
     .kopoInfo{
         width: 100%;
@@ -1068,5 +1074,40 @@ html {
     .serviceImg{
         width: 80%;
     }
+    .aboutContactTitle{
+        font-size: 6vw;
+    }
+    .aboutContactText{
+        font-size: 4vw;
+        width: 80%;
+    }
+    .aboutContact{
+        width: 95%;
+    }
+    .aboutInputDiv{
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+    .aboutInputDiv ::placeholder{
+        color: #2D7DB8;
+    }
+    .aboutContactInput{
+        width: 40%;
+        margin: 3%;
+        font-size: 4vw;
+        border: solid gray 1px;
+    }
+    #Email{
+        width: 100%;
+        color: #2D7DB8;
+    }
+    #aboutContactMessage{
+        font-size: 4vw;
+        width: 92%;
+        height: 40vw;
+    }
+
 }
 
