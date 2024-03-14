@@ -15,8 +15,8 @@ var transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: 'timurserve@gmail.com',
-    pass: 'kbxc wcdz joph ytps'
+    user: process.env.MAIL,
+    pass: process.env.MAILPASS
   }
 });
 
