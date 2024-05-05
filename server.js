@@ -3,7 +3,7 @@ const express = require('express')
 const app = express();
 const bodyParser = require('body-parser');
 require("dotenv").config()
-const PORT = 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server is running on this port: ${PORT}`));
 
 
@@ -64,13 +64,13 @@ app.post("/send/mail", function (req, res) {
   let email = req.body.email
   var mailOptions = {
     from: 'timurserve@gmail.com',
-    to: ['gusarov.timur@gmail.com'],
+    to: [process.env.USERMAIL],
     subject: `INCOMING MAIL FROM ${name}: ${email}`,
     text: message
   };
 
 
-  client.channels.fetch('1211988415881543710')
+  client.channels.fetch(process.env.DISCCHANNEL)
     .then(channel => channel.send(message))
   console.log("Discord succecfully notified")
 

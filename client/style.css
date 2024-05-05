@@ -50,7 +50,7 @@ html {
     font-size: 2vw;
     background-color: #2D7DB8;
     color: white;
-    padding: .9rem;
+    padding: .7rem;
     border-radius: 1rem;
 }
 
@@ -65,9 +65,12 @@ html {
     color: #2D7DB8;
 
 }
-.hiddenLanding, .hiddenIntro{
-    display: none;    
+
+.hiddenLanding,
+.hiddenIntro {
+    display: none;
 }
+
 .landingTekstHolder {
     width: 40%;
     height: 80%;
@@ -105,71 +108,92 @@ html {
 
 .kontaktHolder {
     align-items: start;
-
+    background-color: #fff;
+    overflow-y: hidden;
 }
 
 .kontaktInfoHolder {
-    flex-direction: column;
+    flex-direction: row;
     width: 50%;
-    margin-top: 10vh;
+    padding-top: 10vh;
+    flex-wrap: wrap;
 }
-
+.kontaktWrapper{
+    flex-wrap: wrap;
+    justify-content: right;
+}
 .kontaktTitle {
     font-size: 3vw;
     color: #2D7DB8;
+    margin: 3vw 4vw;
+    width: 100%;
+    padding: 1vw;
 }
 
 .emailInputs {
-    background-color: #2D7DB8;
-    color: white;
+
+    color: #2D7DB8;
     border: none;
-    width: 25vw;
-    height: 4vw;
-    margin: 1vw;
-    border-radius: 1vw;
-    padding-left: 1vw;
+    width: 40%;
+
+    margin: 2%;
+    margin-top: 0%;
+    border: gray 1px solid;
+    padding: 1%;
 }
 
 .emailInputs::placeholder {
-    color: white;
+    color: #2D7DB8;
 }
-
+.emailInputs:focus{
+    outline: none;
+    scale: 1.01;
+    border: black 1px solid;
+    color: #2D7DB8;
+}
 .emailInputs::after,
 .emailInputs::before {
     border: none;
 }
 
-#EmailText {
-    background-color: #2D7DB8;
-    width: 25vw;
-    color: white;
-    border: none;
-    padding: 1vw 0vw 0vw 1vw;
-    border-radius: 1vw;
+.contactTelef {
+    width: 86.2%;
 }
 
+#EmailText {
+    width: 86.2%;
+    color: #2D7DB8;
+    border: solid gray 1px;
+    padding: 1%;
+    margin: 0% 2%;
+
+}
+#EmailText:focus{
+    outline: none;
+    scale: 1.01;
+    border: black 1px solid;
+}
 #EmailText::placeholder {
-    color: white;
+    color: #2D7DB8;
 }
 
 #EmailSend {
-    background-color: #2D7DB8;
-    color: white;
-    width: 25vw;
-    font-size: 2vw;
-    border: none;
-    margin-top: 1rem;
+    background: none;
+    font-size: 1.5vw;
+    border: solid gray 1px;
     border-radius: 1vw;
-    padding: 1vw;
+    padding: .6vw;
     text-align: start;
-    margin-bottom: 5vh;
+    margin: 2%;
+    color: #2D7DB8;
+    cursor: pointer;
 }
 
 .kontaktImageHolder {
-    width: 60%;
+    width: 50%;
     display: flex;
-    justify-content: end;
-    background: radial-gradient(ellipse at right bottom, #fff 0%, #fff 70%, #DFF3FD 71%);
+    justify-content: center;
+
     min-height: 110vh;
     align-items: center;
 }
@@ -621,20 +645,33 @@ html {
     border: solid gray 1px;
     background-color: white;
     border-radius: 0%;
-    width: 30%;
+    width: 60%;
     padding: 1%;
     font-size: 1vw;
+    color: #2D7DB8;
 }
-.aboutInputDiv{
+.aboutContactInput::placeholder{
+    color: #2D7DB8;
+}
+.aboutTelef{
+    margin: 0vw 1vw;
+}
+.aboutInputDiv {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1vw;
+    margin-top: 1vw;
 }
+
 #aboutContactMessage {
     width: 99%;
-    height: 40vh;
+    height: 30vh;
     font-size: 1vw;
+    padding: .3vw .6vw;
+}
+#aboutContactMessage::placeholder{
+    color: #2D7DB8;
 }
 
 .aboutBtnDiv {
@@ -690,7 +727,7 @@ html {
     font-size: 2vw;
     margin: 0%;
     margin-top: 5vw;
-        
+
 }
 
 .kopoTekst {
@@ -702,33 +739,41 @@ html {
     text-decoration: none;
     color: #2D7DB8;
 }
-#openNav{
+
+#openNav {
     display: none;
 }
-.hiddenNav{
+
+.hiddenNav {
     width: 0%;
     overflow: hidden;
+    height: 0vh;
 }
+
 @media screen and (max-width: 600px) {
-    .header{
+    .header {
         height: 7vh;
         position: static;
     }
-    .landingTitle{
+
+    .landingTitle {
         display: none;
     }
-    .hiddenLanding{
+
+    .hiddenLanding {
         display: block;
         font-size: 7.5vw;
         width: 80%;
         color: #2D7DB8;
     }
-    .landingImage{
+
+    .landingImage {
         width: 80%;
         margin: 10%;
         margin-bottom: 0%;
     }
-    .landingTekstHolder{
+
+    .landingTekstHolder {
         width: 90%;
         display: flex;
         justify-content: center;
@@ -737,206 +782,256 @@ html {
         height: auto;
         margin: 0%;
     }
-    .landingHolder{
+
+    .landingHolder {
         flex-direction: column-reverse;
-        padding-top: 5vh ;
+        padding-top: 5vh;
         height: auto;
     }
-    .landingTekst{
+
+    .landingTekst {
         font-size: 5vw;
         width: 80%;
         text-align: left;
     }
-    .landingBtn{
+
+    .landingBtn {
         width: 100%;
         font-size: 5vw;
         padding: 3vw;
     }
-    .hiddenIntro{
+
+    .hiddenIntro {
         font-size: 8vw;
         width: 100%;
         display: block;
         color: #2D7DB8;
         text-align: center;
     }
-    .IUTitle{
+
+    .IUTitle {
         display: none;
     }
-    .extraHolder{
+
+    .extraHolder {
         flex-direction: column;
     }
-    #IntroImage{
+
+    #IntroImage {
         width: 80%;
     }
-    .aboutIntroText{
+
+    .aboutIntroText {
         width: 100%;
     }
-    .introText{
+
+    .introText {
         font-size: 5vw;
         width: 90%;
     }
-    .introSupport{
+
+    .introSupport {
         margin-top: 3vh;
         font-size: 5vw;
     }
-    .aboutLink{
+
+    .aboutLink {
         font-size: 5vw;
         padding: 2vw;
     }
-    .styleClass{
+
+    .styleClass {
         height: 80%;
     }
-    .swiper{
+
+    .swiper {
         margin: 0vw;
         width: 100%;
         height: 50vh;
     }
-    .swiper-wrapper{
+
+    .swiper-wrapper {
         height: 10vh;
     }
-    .swiper-slide{
+
+    .swiper-slide {
         margin: 0%;
         width: 100%;
         height: 10vh;
     }
-    .CompanyTitle{
+
+    .CompanyTitle {
         font-size: 10vw;
     }
-    .CompanyDesc{
+
+    .CompanyDesc {
         font-size: 7vw;
     }
-    #BuisnessImage{
+
+    #BuisnessImage {
         display: none;
     }
-    .BuisnessTitle{
+
+    .BuisnessTitle {
         font-size: 5vw;
         text-align: center;
     }
-    .BuisnessDesc{
+
+    .BuisnessDesc {
         font-size: 4vw;
         width: 100%;
         text-align: center;
     }
-    .PaymentHeader{
+
+    .PaymentHeader {
         flex-direction: column;
         justify-content: center;
         width: 100%;
         align-items: center;
         height: auto;
     }
-    .PaymentHeaderTitle{
+
+    .PaymentHeaderTitle {
         font-size: 5vw;
     }
-    .PaymentHeaderText{
+
+    .PaymentHeaderText {
         font-size: 4vw;
     }
-    .PaymentSwitchHolder{
+
+    .PaymentSwitchHolder {
         margin-top: 5vw;
     }
-    .monthlySwitch{
+
+    .monthlySwitch {
         font-size: 6vw;
         padding: 2vw;
     }
-    .yearlySwitch{
+
+    .yearlySwitch {
         font-size: 6vw;
         padding: 2vw;
     }
-    .PackagesHolder{
+
+    .PackagesHolder {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         padding: 0%;
     }
-    .package{
+
+    .package {
         height: auto;
         width: 80%;
-        margin-bottom: 5vh ;
+        margin-bottom: 5vh;
     }
-    #starter{
+
+    #starter {
         height: 50vh;
-        
+
     }
-    .packageTitle{
+
+    .packageTitle {
         font-size: 6vw;
     }
-    .packageText{
+
+    .packageText {
         font-size: 4vw;
     }
-    .packageDiamond{
+
+    .packageDiamond {
         font-size: 10vw;
     }
-    .price{
+
+    .price {
         font-size: 10vw;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 4vw;
     }
-    .kr{
+
+    .kr {
         padding-top: 3vw;
         font-size: 4vw;
     }
-    .priceMonth{
+
+    .priceMonth {
         font-size: 4vw;
     }
-    .perk{
+
+    .perk {
         font-size: 3.5vw;
     }
-    .packageBtn{
+
+    .packageBtn {
         font-size: 4vw;
         margin-top: 5vw;
         color: white;
         text-decoration: none;
         margin-bottom: 5vw;
     }
-    #advanced{
+
+    #advanced {
         height: 70%;
     }
-    .kontaktHolder{
+
+    .kontaktHolder {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .kontaktImageHolder{
+
+    .kontaktImageHolder {
         display: none;
     }
-    .kontaktInfoHolder{
+
+    .kontaktInfoHolder {
         margin-top: 0%;
     }
-    .kontaktTitle{
+
+    .kontaktTitle {
         font-size: 6vw;
     }
-    .emailInputs{
+
+    .emailInputs {
         width: 80%;
         font-size: 4vw;
         padding: 3vw;
     }
-    #EmailText{
+
+    #EmailText {
         width: 80%;
         padding: 3vw;
         font-size: 4vw;
     }
-    #EmailSend{
+
+    #EmailSend {
         margin-top: 5vh;
         width: 80%;
         padding: 3vw;
         font-size: 4vw;
     }
-    .link{
+
+    .link {
         display: none;
     }
-    .navBar{
+
+    .navBar {
         justify-content: end;
     }
-    .companyName{
+
+    .companyName {
         font-size: 6vw;
     }
-    #openNav{
+
+    #openNav {
         display: block;
         margin-right: 4vw;
     }
-    .hiddenNav{
+
+    .hiddenNav {
         width: 100%;
         position: fixed;
         background-color: #2D7DB8;
@@ -950,40 +1045,49 @@ html {
         justify-content: space-around;
         padding: 2vw 0vw 2vw 0vw;
     }
-    .hiddenNavBar, .hiddenNavDesc{
+
+    .hiddenNavBar,
+    .hiddenNavDesc {
         width: 100%;
         justify-content: space-around;
     }
-    .hiddenNavDesc{
+
+    .hiddenNavDesc {
         padding-left: 0vw;
         margin-top: 2vw;
     }
-    .hiddenlinkDesc{
+
+    .hiddenlinkDesc {
         color: white;
         font-size: 4vw;
         text-decoration: none;
     }
-    .hiddenlink{
+
+    .hiddenlink {
         margin: 0%;
         padding: 0%;
         width: 15%;
     }
-    .hiddenImage{
+
+    .hiddenImage {
         background-color: #fff;
         border-radius: 50px;
         padding: 2vw;
         width: 60%;
         margin: 0%;
     }
-    #closeNav{
+
+    #closeNav {
         color: #2D7DB8;
     }
-    .footer{
+
+    .footer {
         flex-wrap: wrap;
         padding-bottom: 10vh;
         height: 30vh;
     }
-    .kopoInfo{
+
+    .kopoInfo {
         width: 100%;
         margin: 0%;
         height: auto;
@@ -992,122 +1096,149 @@ html {
         align-items: center;
         margin-top: 3vw;
     }
-    .kopoInfoTitle{
+
+    .kopoInfoTitle {
         font-size: 5vw;
     }
-    .kopoInfoText{
+
+    .kopoInfoText {
         width: auto;
         font-size: 3.5vw;
     }
-    .kopoOther{
+
+    .kopoOther {
         margin-top: 10vw;
         height: auto;
         margin-bottom: 10vw;
     }
-    .kopoTitle{
+
+    .kopoTitle {
         font-size: 4vw;
     }
-    .kopoTekst{
+
+    .kopoTekst {
         font-size: 3vw;
     }
-    .aboutWelcome{
+
+    .aboutWelcome {
         justify-content: flex-start;
         align-items: start;
         padding-left: 5vw;
         padding-top: 10vh;
         padding-bottom: 10vh;
     }
-    .aboutTitle{
+
+    .aboutTitle {
         font-size: 6vw;
         width: 90%;
     }
-    .aboutText{
+
+    .aboutText {
         font-size: 4vw;
     }
-    .aboutBtnsHolder{
+
+    .aboutBtnsHolder {
         width: 95%;
         justify-content: space-around;
         padding-right: 5vw;
         font-weight: 100;
     }
-    .aboutBtns{
+
+    .aboutBtns {
         font-size: 5vw;
         padding: 2vw;
     }
-    .mainInfoHolder{
+
+    .mainInfoHolder {
         flex-direction: column-reverse;
     }
-    .mainTitle{
+
+    .mainTitle {
         display: none;
     }
-    .mainText{
+
+    .mainText {
         font-size: 4vw;
     }
-    .mainImage{
+
+    .mainImage {
         width: 80%;
         margin: 2vw 0vw 2vw 0vw;
     }
-    .serviceDiv{
+
+    .serviceDiv {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        align-items: center;    
+        align-items: center;
     }
-    .serviceName{
+
+    .serviceName {
         font-size: 6vw;
         margin: 2vw;
     }
-    .serviceText{
+
+    .serviceText {
         font-size: 4vw;
         width: 80%;
     }
-    .service{
+
+    .service {
         width: 80%;
         margin-top: 3vw;
     }
-    .serviceImageDiv{
+
+    .serviceImageDiv {
         width: 20%;
         height: 20%;
         padding: 3%;
         border: solid gray 1px;
     }
-    .serviceImg{
+
+    .serviceImg {
         width: 80%;
     }
-    .aboutContactTitle{
+
+    .aboutContactTitle {
         font-size: 6vw;
     }
-    .aboutContactText{
+
+    .aboutContactText {
         font-size: 4vw;
         width: 80%;
     }
-    .aboutContact{
+
+    .aboutContact {
         width: 95%;
     }
-    .aboutInputDiv{
+
+    .aboutInputDiv {
         flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
-        
+
     }
-    .aboutInputDiv ::placeholder{
+
+    .aboutInputDiv ::placeholder {
         color: #2D7DB8;
     }
-    .aboutContactInput{
+
+    .aboutContactInput {
         width: 40%;
         margin: 3%;
         font-size: 4vw;
         border: solid gray 1px;
     }
-    #Email{
+
+    #Email {
         width: 100%;
         color: #2D7DB8;
     }
-    #aboutContactMessage{
+
+    #aboutContactMessage {
         font-size: 4vw;
         width: 92%;
         height: 40vw;
     }
 
 }
-

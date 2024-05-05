@@ -51,14 +51,16 @@
     </div>
     <form class="kontaktInfoHolder flex">
         <h1 class="kontaktTitle">SPØR OSS OM ALT</h1>
-        <input type="text" id="navn" class="emailInputs" required placeholder="NAVN">
-        <input type="email" id="Email" class="emailInputs" required placeholder="E-POST">
-        <input type="number" id="telefon" class="emailInputs" required placeholder="TELEFON">
-        <textarea id="EmailText" cols="30" rows="7" required placeholder="MELDING"></textarea>
-        <input type="submit" value="SEND" id="EmailSend">
+        <div class="kontaktWrapper flex">
+
+            <input type="text" id="navn" class="emailInputs" required placeholder="NAVN...">
+            <input type="email" id="Email" class="emailInputs" required placeholder="E-POST...">
+            <input type="number" id="telefon" class="emailInputs contactTelef" required placeholder="TELEFON...">
+            <textarea id="EmailText" cols="30" rows="7" required placeholder="MELDING..."></textarea>
+            <input type="submit" value="SEND MELDING" id="EmailSend">
+        </div>
     </form>
     <div class="kontaktImageHolder">
-        <a class="kredit" href="http://www.freepik.com" target="_blank">designed by vectorjuice / Freepik</a>
         <img src="../bilder/KontaktImage.jpg" alt="silly little image" id="kontaktImage">
     </div>
 
